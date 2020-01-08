@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Qa.Listerners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="Title validation(failed)">
+    <classes>
+      <class name="Qa.Login">
+        <methods>
+          <include name="intilize"/>
+          <include name="closeResources"/>
+        </methods>
+      </class> <!-- Qa.Login -->
+      <class name="Qa.ValidateTitle">
+        <methods>
+          <include name="titleValidation"/>
+          <include name="closeResources"/>
+          <include name="intilize"/>
+        </methods>
+      </class> <!-- Qa.ValidateTitle -->
+      <class name="Qa.ValidateTabs">
+        <methods>
+          <include name="intilize"/>
+          <include name="closeResources"/>
+        </methods>
+      </class> <!-- Qa.ValidateTabs -->
+    </classes>
+  </test> <!-- Title validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Qa.Listerners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Title validation(failed)">
+    <classes>
+      <class name="Qa.ValidateTitle">
+        <methods>
+          <include name="titleValidation"/>
+          <include name="closeResources"/>
+          <include name="intilize"/>
+        </methods>
+      </class> <!-- Qa.ValidateTitle -->
+    </classes>
+  </test> <!-- Title validation(failed) -->
+  <test thread-count="5" name="Tabs validation(failed)">
+    <classes>
+      <class name="Qa.ValidateTabs">
+        <methods>
+          <include name="intilize"/>
+          <include name="closeResources"/>
+          <include name="validateTabs"/>
+        </methods>
+      </class> <!-- Qa.ValidateTabs -->
+    </classes>
+  </test> <!-- Tabs validation(failed) -->
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="Qa.Login">
+        <methods>
+          <include name="intilize"/>
+          <include name="firstTest"/>
+          <include name="closeResources"/>
+        </methods>
+      </class> <!-- Qa.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
