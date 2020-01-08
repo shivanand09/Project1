@@ -19,6 +19,8 @@ public class HomePageObjects {
 		
 		System.out.println("yeh b1");
 		
+		System.out.println("b1 commits to master");
+		
 	}
 
 	@FindBy(xpath = "//span[contains(text(),'Login')]")
