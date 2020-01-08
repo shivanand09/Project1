@@ -13,6 +13,8 @@ public class HomePageObjects {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
+		System.out.println("OK");
+		
 	}
 
 	@FindBy(xpath = "//span[contains(text(),'Login')]")
