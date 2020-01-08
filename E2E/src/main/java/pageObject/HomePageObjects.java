@@ -13,7 +13,7 @@ public class HomePageObjects {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
-		System.out.println("OK");
+		System.out.println("b1");
 		
 	}
 
